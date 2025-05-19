@@ -1,5 +1,2 @@
 title: My Theme
 description: A custom Jekyll theme using SCSS
-
-sass:
-  sass_dir: _sass
