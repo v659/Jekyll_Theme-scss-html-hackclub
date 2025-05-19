@@ -1,7 +1,13 @@
 // Import SCSS partials (no need for underscore or extension)
-@import "my-theme-flat/variables";
+// @import "my-theme-flat/variables";
 @import "my-theme-flat/base";
 @import "my-theme-flat/layout";
+
+// Define variables directly here
+$font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$background-color: #f4f4f4;
+$text-color: #222;
+$primary-color: #0070f3; // Example value
 
 // Add your global styles below
 body {
