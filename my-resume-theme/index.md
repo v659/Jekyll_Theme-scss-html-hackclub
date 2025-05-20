@@ -1,19 +1,48 @@
 ---
 layout: default
-title: Resume
+title: My Resume
 ---
 
-<section class="section" id="about">
-  <h1>About Me</h1>
-  <p>Write about yourself here...</p>
-</section>
+<div class="container">
+  <section id="about">
+    <h1>About Me</h1>
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Your full name" />
 
-<section class="section" id="experience">
-  <h1>Experience</h1>
-  <p>List your work experience here...</p>
-</section>
+    <label for="summary">Summary:</label>
+    <textarea id="summary" placeholder="Brief introduction or summary"></textarea>
+  </section>
 
-<section class="section" id="projects">
-  <h1>Projects</h1>
-  <p>Showcase your projects here...</p>
-</section>
+  <section id="experience">
+    <h2>Experience</h2>
+    <label for="job1">Job Title & Company:</label>
+    <input type="text" id="job1" placeholder="e.g. Software Engineer at XYZ Corp" />
+
+    <label for="job1desc">Description:</label>
+    <textarea id="job1desc" placeholder="Describe your responsibilities"></textarea>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <label for="edu1">Degree & Institution:</label>
+    <input type="text" id="edu1" placeholder="e.g. B.Sc. Computer Science, ABC University" />
+
+    <label for="edu1desc">Details:</label>
+    <textarea id="edu1desc" placeholder="Additional education info"></textarea>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <label for="skillslist">List your skills:</label>
+    <textarea id="skillslist" placeholder="e.g. JavaScript, Python, CSS"></textarea>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <label for="email">Email:</label>
+    <input type="text" id="email" placeholder="you@example.com" />
+
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" placeholder="+1 555 123 4567" />
+  </section>
+</div>
