@@ -13,8 +13,7 @@ author:
   linkedin_username: your_linkedin_handle
 
 # Build settings
-markdown: kramdown           # Markdown processor
-theme: ""                    # Leave blank if you use your own layouts and assets
+markdown: kramdown           # Markdown processor                   # Leave blank if you use your own layouts and assets
 plugins:                    # List Jekyll plugins you want to use
   - jekyll-feed
   - jekyll-seo-tag
