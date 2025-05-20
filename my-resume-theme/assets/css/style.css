@@ -1,59 +1,68 @@
 body {
-  background: #007BFF;
   font-family: 'Segoe UI', sans-serif;
-  padding: 2em;
+  background: #eef2f3;
   color: #222;
+  margin: 0;
+  padding: 0;
 }
 
-.container {
-  max-width: 800px;
-  margin: auto;
+header, section, footer {
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.section-box {
-  background: white;
-  border-radius: 8px;
-  padding: 1.5em;
-  margin-bottom: 2em;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, background 0.2s;
+.box {
+  border-left: 8px solid #333;
+  background: #fff;
 }
 
-.section-box:hover {
-  transform: scale(1.01);
-  background: #f4f4f4;
-}
+.box.blue     { background: #d0ebff; border-color: #228be6; }
+.box.yellow   { background: #fff3bf; border-color: #f59f00; }
+.box.green    { background: #d3f9d8; border-color: #40c057; }
+.box.pink     { background: #ffe0f0; border-color: #f06595; }
+.box.purple   { background: #e5dbff; border-color: #845ef7; }
 
-.about-box { background: #ffdddd; }
-.experience-box { background: #ddffdd; }
-.education-box { background: #ddddff; }
-.skills-box { background: #fffacd; }
-.contact-box { background: #f0e68c; }
-.button-box { background: #cce5ff; text-align: center; }
-
-input, textarea {
-  display: block;
-  width: 100%;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-  padding: 0.75em;
-  border: 1px solid #aaa;
-  border-radius: 5px;
-  font-size: 1em;
-  background: #fefefe;
-}
-
-button {
-  padding: 0.75em 1.5em;
-  background: #0056b3;
-  color: white;
+.btn {
+  padding: 0.7rem 1.5rem;
   border: none;
   border-radius: 5px;
-  font-weight: bold;
+  background: #339af0;
+  color: white;
   cursor: pointer;
-  transition: background 0.3s;
+  font-size: 1rem;
 }
 
-button:hover {
-  background: #003f7f;
+.btn:hover {
+  background: #1c7ed6;
+}
+
+.btn-alt {
+  background: #ced4da;
+  color: #212529;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 0.6rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  width: 250px;
+}
+
+input:focus {
+  border-color: #5c7cfa;
+  outline: none;
+}
+
+.highlight {
+  background: #fff9db;
+  padding: 1rem;
+  border-left: 6px solid #fab005;
+  border-radius: 4px;
+  font-weight: bold;
 }
