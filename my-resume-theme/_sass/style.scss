@@ -1,54 +1,68 @@
-$primary-color: #1e1f26
-$accent-color: #f76c6c
-$text-color: #f4f4f4
-$background-color: #292b36
-$highlight: #45aaf2
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #eef2f3;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
 
-body
-  margin: 0
-  font-family: 'Segoe UI', sans-serif
-  background: $background-color
-  color: $text-color
-  line-height: 1.6
-  padding: 2rem
+header, section, footer {
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
 
-header
-  text-align: center
-  margin-bottom: 2rem
+.box {
+  border-left: 8px solid #333;
+  background: #fff;
+}
 
-  h1
-    font-size: 2.5rem
-    color: $accent-color
+.box.blue     { background: #d0ebff; border-color: #228be6; }
+.box.yellow   { background: #fff3bf; border-color: #f59f00; }
+.box.green    { background: #d3f9d8; border-color: #40c057; }
+.box.pink     { background: #ffe0f0; border-color: #f06595; }
+.box.purple   { background: #e5dbff; border-color: #845ef7; }
 
-  p
-    font-size: 1.2rem
-    color: #ccc
+.btn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background: #339af0;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
 
-section
-  margin-bottom: 2rem
-  border-left: 4px solid $highlight
-  padding-left: 1rem
+.btn:hover {
+  background: #1c7ed6;
+}
 
-h2
-  color: $highlight
-  margin-bottom: 0.5rem
+.btn-alt {
+  background: #ced4da;
+  color: #212529;
+}
 
-ul
-  list-style-type: none
-  padding: 0
+input[type="text"],
+input[type="email"] {
+  padding: 0.6rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  width: 250px;
+}
 
-li
-  margin-bottom: 0.5rem
+input:focus {
+  border-color: #5c7cfa;
+  outline: none;
+}
 
-a
-  color: $accent-color
-  text-decoration: none
-
-  &:hover
-    text-decoration: underline
-
-footer
-  text-align: center
-  margin-top: 3rem
-  font-size: 0.9rem
-  color: #aaa
+.highlight {
+  background: #fff9db;
+  padding: 1rem;
+  border-left: 6px solid #fab005;
+  border-radius: 4px;
+  font-weight: bold;
+}
