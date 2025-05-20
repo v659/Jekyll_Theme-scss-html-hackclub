@@ -1,21 +1,19 @@
 ---
 layout: default
-title: My Resume
+title: Resume
 ---
 
-# John Doe
+<section class="section" id="about">
+  <h1>About Me</h1>
+  <p>Write about yourself here...</p>
+</section>
 
-- 📧 john@example.com  
-- 💼 Web Developer  
-- 🌍 New York, NY  
+<section class="section" id="experience">
+  <h1>Experience</h1>
+  <p>List your work experience here...</p>
+</section>
 
-## Experience
-
-**Frontend Developer** at CoolTech Inc.  
-*Jan 2020 - Present*
-
-- Built responsive UI components using React.js and SCSS.
-
-## Skills
-
-HTML, CSS, JavaScript, SCSS, React, Jekyll
+<section class="section" id="projects">
+  <h1>Projects</h1>
+  <p>Showcase your projects here...</p>
+</section>

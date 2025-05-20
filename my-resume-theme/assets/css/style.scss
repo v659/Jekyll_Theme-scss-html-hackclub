@@ -1,0 +1,23 @@
+body {
+  background-color: #004080;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding: 2em;
+  margin: 1em;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #000;
+}
+
+#about { background-color: #cce5ff; }
+#experience { background-color: #b3d9ff; }
+#projects { background-color: #99ccff; }
+
+h1 {
+  margin-top: 0;
+}
