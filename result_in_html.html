@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Resume</title>
+
+<style>
+  /* === General Body and Layout Styles === */
+  body {
+    background-color: #1a2a6c; /* deep blue background */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    max-width: 900px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  h1, h2, h3 {
+    margin-top: 0;
+  }
+
+  /* === Section Box Styling === */
+  section {
+    background-color: #24478f; /* a lighter blue */
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+
+  /* Unique colors for each section */
+  #about {
+    background-color: #24478f;
+  }
+
+  #experience {
+    background-color: #3674b7;
+  }
+
+  #education {
+    background-color: #4986d4;
+  }
+
+  #skills {
+    background-color: #6aa8ff;
+    color: #001f4d;
+  }
+
+  #contact {
+    background-color: #4472c4;
+  }
+
+  /* === Input styles for typing info === */
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 0.4rem 0.6rem;
+    margin: 0.4rem 0 1rem 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+
+  label {
+    font-weight: 600;
+    font-size: 1.05rem;
+    display: block;
+  }
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <section id="about">
+      <h1>About Me</h1>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Your full name" />
+
+      <label for="summary">Summary:</label>
+      <textarea id="summary" placeholder="Brief introduction or summary"></textarea>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <label for="job1">Job Title & Company:</label>
+      <input type="text" id="job1" placeholder="e.g. Software Engineer at XYZ Corp" />
+
+      <label for="job1desc">Description:</label>
+      <textarea id="job1desc" placeholder="Describe your responsibilities"></textarea>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <label for="edu1">Degree & Institution:</label>
+      <input type="text" id="edu1" placeholder="e.g. B.Sc. Computer Science, ABC University" />
+
+      <label for="edu1desc">Details:</label>
+      <textarea id="edu1desc" placeholder="Additional education info"></textarea>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <label for="skillslist">List your skills:</label>
+      <textarea id="skillslist" placeholder="e.g. JavaScript, Python, CSS"></textarea>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <label for="email">Email:</label>
+      <input type="text" id="email" placeholder="you@example.com" />
+
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" placeholder="+1 555 123 4567" />
+    </section>
+  </div>
+</body>
+</html>
