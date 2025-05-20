@@ -1,0 +1,54 @@
+$primary-color: #1e1f26
+$accent-color: #f76c6c
+$text-color: #f4f4f4
+$background-color: #292b36
+$highlight: #45aaf2
+
+body
+  margin: 0
+  font-family: 'Segoe UI', sans-serif
+  background: $background-color
+  color: $text-color
+  line-height: 1.6
+  padding: 2rem
+
+header
+  text-align: center
+  margin-bottom: 2rem
+
+  h1
+    font-size: 2.5rem
+    color: $accent-color
+
+  p
+    font-size: 1.2rem
+    color: #ccc
+
+section
+  margin-bottom: 2rem
+  border-left: 4px solid $highlight
+  padding-left: 1rem
+
+h2
+  color: $highlight
+  margin-bottom: 0.5rem
+
+ul
+  list-style-type: none
+  padding: 0
+
+li
+  margin-bottom: 0.5rem
+
+a
+  color: $accent-color
+  text-decoration: none
+
+  &:hover
+    text-decoration: underline
+
+footer
+  text-align: center
+  margin-top: 3rem
+  font-size: 0.9rem
+  color: #aaa
