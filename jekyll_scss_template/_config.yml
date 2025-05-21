@@ -1,6 +1,0 @@
-sass:
-  load_paths:
-    - _sass
-
-# Jekyll settings (simplified)
-theme: minima
